@@ -1,0 +1,114 @@
+/**
+ * Типографика
+ */
+html {
+    font: 15px/1.2 Georgia, serif;
+    color: #333;
+}
+
+
+
+
+/**
+ * Частоиспользуемые элементы
+ */
+
+/**
+ * Поля ввода
+ */
+:-ms-input-placeholder {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+/* Firefox 18- */
+:-moz-placeholder {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+/* Firefox 19+ */
+::-moz-placeholder {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+::-webkit-input-placeholder {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+
+:focus:-ms-input-placeholder { opacity: 0; }
+:focus::-moz-placeholder { opacity: 0; }
+:focus::-moz-placeholder { opacity: 0; }
+:focus::-webkit-input-placeholder { opacity: 0; }
+
+.input {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    height: 34px;
+    padding: 0 18px;
+    border: 1px solid #ccc;
+    background: #e6e6e6;
+}
+    .ltie9 .input {
+        line-height: 32px;
+    }
+
+
+/**
+ * Кнопки
+ */
+.btn {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    padding: 0 28px;
+    border: 2px solid;
+    font: 14px/36px Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+         -o-transition: .2s;
+            transition: .2s;
+}
+    .btn_fill {
+        color: #fff;
+        border-color: #349b66;
+        background: #349b66;
+    }
+        .btn_fill:hover {
+            color: #349b66;
+            background: #fff;
+        }
+    .btn_line {
+        color: #d42222;
+        background: #fff;
+    }
+        .btn_line:hover {
+            color: #fff;
+            border-color: #d42222;
+            background: #d42222;
+        }
+
+
+
+
+/**
+ * Структурные элементы
+ */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 940px;
+}
