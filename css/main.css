@@ -71,7 +71,7 @@ html {
     height: 40px;
     padding: 0 28px;
     border: 2px solid;
-    font: 14px/36px Arial, sans-serif;
+    font: bold 14px/36px Arial, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 9999px;
@@ -90,6 +90,7 @@ html {
             background: #fff;
         }
     .btn_line {
+        padding: 0 17px;
         color: #d42222;
         background: #fff;
     }
@@ -103,6 +104,70 @@ html {
 
 
 /**
+ * Лого
+ */
+.logo {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 159px;
+    height: 28px;
+    font: 0/0 a;
+    background: url("../img/design/logo.png") no-repeat;
+}
+    .logo__link {
+        display: block;
+        height: 100%;
+    }
+
+
+
+
+/**
+ * Контакты
+ */
+.contacts {
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 1.25;
+}
+    .contacts__title {
+        position: relative;
+        margin: 0;
+        font-size: inherit;
+        font-weight: normal;
+    }
+        .contacts__title:before {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 100%;
+            margin-top: 2px;
+            width: 24px;
+            height: 24px;
+            background: url("../img/design/phone.png") no-repeat;
+        }
+    .contacts__link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        -webkit-transition: .2s;
+           -moz-transition: .2s;
+             -o-transition: .2s;
+                transition: .2s;
+    }
+        .contacts__link:hover {
+            text-shadow: 1px 1px 1px #aaa;
+        }
+    .contacts__phone {
+        font-size: 142.8571%;
+        color: #349b66;
+    }
+
+
+
+/**
  * Структурные элементы
  */
 .container {
@@ -111,4 +176,127 @@ html {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 940px;
+    width: 940px;
 }
+
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .col_w_1  { width: 8.333333333333332%; }
+    .col_w_2  { width: 16.666666666666664%; }
+    .col_w_3  { width: 25%; }
+    .col_w_4  { width: 33.33333333333333%; }
+    .col_w_5  { width: 41.66666666666667%; }
+    .col_w_6  { width: 50%; }
+    .col_w_7  { width: 58.333333333333336%; }
+    .col_w_8  { width: 66.66666666666666%; }
+    .col_w_9  { width: 75%; }
+    .col_w_10 { width: 83.33333333333334%; }
+    .col_w_11 { width: 91.66666666666666%; }
+    .col_w_12 { width: 100%; }*/
+
+
+
+
+/**
+ *
+ */
+.panel {
+    min-height: 87px;
+    font-size: 14px;
+    background: #fff;
+}
+    .panel__inner {
+        overflow: hidden;
+    }
+    /*.panel__item {
+        width: 25%;
+        line-height: normal;
+    }*/
+    .panel__title {
+        margin-top: 27px;
+        margin-right: 90px;
+        float: left;
+    }
+    .panel__sub-title {
+        margin-top: 22px;
+        float: left;
+        max-width: 25%;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    .panel__cta {
+        margin-top: 24px;
+        float: right;
+    }
+    .panel__contacts {
+        margin-top: 10px;
+        margin-left: 31px;
+        float: right;
+        text-align: right;
+    }
+
+
+
+
+/**
+ * Основная навигация для сайта
+ */
+.nav {
+    color: #fff;
+    background: url("../img/design/nav-bg.png") no-repeat 50% 0 #080504;
+}
+    .nav__inner {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .nav__link {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 9px;
+        height: 50px;
+        color: inherit;
+        text-decoration: none;
+        -webkit-transition: .12s linear;
+           -moz-transition: .12s linear;
+             -o-transition: .12s linear;
+                transition: .12s linear;
+    }
+    .nav__text {
+        border-bottom: 1px solid;
+        -webkit-transition: inherit;
+           -moz-transition: inherit;
+             -o-transition: inherit;
+                transition: inherit;
+    }
+        .nav__link_active {
+            text-decoration: none;
+            color: #d42222;
+            pointer-events: none;
+        }
+        .nav__link:hover {
+            background-color: rgba(255, 255, 255, .14);
+        }
+            .nav__link_active .nav__text,
+            .nav__link:hover .nav__text {
+                border-color: transparent;
+            }
