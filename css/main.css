@@ -102,6 +102,95 @@ html {
 
 
 
+/**
+ * Фоновый узор #1
+ */
+.square-pattern {
+    background-image: url("../img/design/square-pattern.png");
+    background-repeat: repeat;
+}
+
+
+
+/**
+ * Фоновый узор #2
+ */
+.skew-pattern {
+    background-image: url("../img/design/skew-pattern.png");
+    background-repeat: repeat;
+}
+
+
+
+/**
+ * Нумерованный список
+ */
+.ordered-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: count;
+}
+    .ordered-list__item {
+        position: relative;
+        margin-bottom: 11px;
+        /*padding-left: 47px;*/
+    }
+        .ordered-list__item:before {
+            content: counter(count) ".";
+            counter-increment: count;
+            position: relative;
+            z-index: 1;
+            margin: 0 12px 6px 3px;
+            float: left;
+            display: inline-block;
+            padding: 0 9px 0 11px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            border-radius: 9999px;
+            background: #349b66;
+        }
+        .ordered-list__item:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 17px;
+            height: 17px;
+            border: 2px solid #433941;
+        }
+
+
+
+
+/**
+ * Ненумерованный список
+ */
+.unordered-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .unordered-list__item {
+        position: relative;
+        margin-bottom: 11px;
+        padding-left: 27px;
+    }
+        .unordered-list__item:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 19px;
+            height: 14px;
+            background: url("../img/design/check.png") no-repeat;
+        }
+
+
 
 /**
  * Лого
@@ -300,3 +389,30 @@ html {
             .nav__link:hover .nav__text {
                 border-color: transparent;
             }
+
+
+/**
+ * Раздел
+ */
+.section {}
+    .section__title {
+        margin: 0 0 41px;
+        padding: 0;
+        font: 36px Arial, sans-serif;
+    }
+        .section__title:after {
+            content: "";
+            margin-top: 2px;
+            display: block;
+            height: 5px;
+            width: 141px;
+            background: url("../img/design/title.png") no-repeat;
+        }
+
+    .section_dark {
+        color: #fff;
+        background-color: #433942;
+    }
+        .section_dark .section__title:after {
+            background-position: 0 100%;
+        }
