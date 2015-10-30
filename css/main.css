@@ -1,17 +1,30 @@
-/**
- * Типографика
- */
+
+
+/* ==========================================================================
+   Типографика
+   ========================================================================== */
+
 html {
     font: 15px/1.2 Georgia, serif;
     color: #333;
 }
 
+::-moz-selection {
+    color: #fff;
+    background: #349B66;
+}
+
+::selection {
+    color: #fff;
+    background: #349B66;
+}
 
 
 
-/**
- * Частоиспользуемые элементы
- */
+
+/* ==========================================================================
+   Частоиспользуемые элементы
+   ========================================================================== */
 
 /**
  * Поля ввода
@@ -255,11 +268,56 @@ html {
     }
 
 
+/**
+ * Форма для контакта
+ */
+.contact-form {}
+    .contact-form__field {}
+
+    .contact-form__head {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        line-height: normal;
+        font-family: Arial, sans-serif;
+    }
+    .contact-form__title {
+        margin: 0 0 2px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #349b66;
+    }
+    .contact-form__info {
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        color: #8f8f8f;
+    }
+
+    /* горизонтальная форма */
+    .contact-form_line {
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    }
+        .contact-form_line .contact-form__field {
+            line-height: 80px;
+        }
+
+    .contact-form_outside {
+        margin-top: -78px;
+        margin-bottom: 37px;
+    }
+
+
 
 /**
  * Структурные элементы
  */
 .container {
+    position: relative;
+    z-index: 0;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
@@ -274,7 +332,7 @@ html {
     clear: both;
 }
 
-/*.row {
+.row {
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -299,13 +357,43 @@ html {
     .col_w_9  { width: 75%; }
     .col_w_10 { width: 83.33333333333334%; }
     .col_w_11 { width: 91.66666666666666%; }
-    .col_w_12 { width: 100%; }*/
+    .col_w_12 { width: 100%; }
+
+    .col_left_1  { margin-left: 8.333333333333332%; }
+    .col_left_2  { margin-left: 16.666666666666664%; }
+    .col_left_3  { margin-left: 25%; }
+    .col_left_4  { margin-left: 33.33333333333333%; }
+    .col_left_5  { margin-left: 41.66666666666667%; }
+    .col_left_6  { margin-left: 50%; }
+    .col_left_7  { margin-left: 58.333333333333336%; }
+    .col_left_8  { margin-left: 66.66666666666666%; }
+    .col_left_9  { margin-left: 75%; }
+    .col_left_10 { margin-left: 83.33333333333334%; }
+    .col_left_11 { margin-left: 91.66666666666666%; }
+    .col_left_12 { margin-left: 100%; }
+
+    .col_right_1  { margin-right: 8.333333333333332%; }
+    .col_right_2  { margin-right: 16.666666666666664%; }
+    .col_right_3  { margin-right: 25%; }
+    .col_right_4  { margin-right: 33.33333333333333%; }
+    .col_right_5  { margin-right: 41.66666666666667%; }
+    .col_right_6  { margin-right: 50%; }
+    .col_right_7  { margin-right: 58.333333333333336%; }
+    .col_right_8  { margin-right: 66.66666666666666%; }
+    .col_right_9  { margin-right: 75%; }
+    .col_right_10 { margin-right: 83.33333333333334%; }
+    .col_right_11 { margin-right: 91.66666666666666%; }
+    .col_right_12 { margin-right: 100%; }
 
 
 
+
+/* ==========================================================================
+   Элементы страницы
+   ========================================================================== */
 
 /**
- *
+ * Главная панель для сайта с логотипом и контактами
  */
 .panel {
     min-height: 87px;
@@ -383,6 +471,7 @@ html {
             pointer-events: none;
         }
         .nav__link:hover {
+            background-color: #333;
             background-color: rgba(255, 255, 255, .14);
         }
             .nav__link_active .nav__text,
@@ -394,11 +483,14 @@ html {
 /**
  * Раздел
  */
-.section {}
+.section {
+    padding-top: 38px;
+    padding-bottom: 36px;
+}
     .section__title {
         margin: 0 0 41px;
         padding: 0;
-        font: 36px Arial, sans-serif;
+        font: normal 36px Arial, sans-serif;
     }
         .section__title:after {
             content: "";
@@ -409,6 +501,15 @@ html {
             background: url("../img/design/title.png") no-repeat;
         }
 
+    .section__info {
+        margin: 0 0 20px;
+        padding: 0;
+        color: #349b66;
+    }
+        .section__info_center {
+            text-align: center;
+        }
+
     .section_dark {
         color: #fff;
         background-color: #433942;
@@ -416,3 +517,289 @@ html {
         .section_dark .section__title:after {
             background-position: 0 100%;
         }
+
+    .section_add-pad {
+        padding-bottom: 76px;
+    }
+
+    .section_border-top {
+        position: relative;
+    }
+        .section_border-top:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            height: 5px;
+            background: url("../img/design/line-pattern.png") repeat-x;
+        }
+
+
+/**
+ * Hero-секция
+ */
+.hero {
+    padding-top: 24px;
+    padding-bottom: 18px;
+    background: url("../img/design/hero-bg.jpg") no-repeat 50% 100% #060606;
+  /*  -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/design/hero-bg.jpg', sizingMethod='scale')";*/
+}
+    .hero__title {
+        position: relative;
+        margin: 0 auto 30px;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 10px 39px;
+        max-width: 66.6666%;
+        text-align: center;
+        font: 30px/1.33 Arial, sans-serif;
+        text-transform: uppercase;
+        color: #333;
+        background: #eae9e9;
+        background: rgba(255, 255, 255, .9);
+    }
+        .hero__title:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: -30px;
+            top: -10px;
+            bottom: -10px;
+            right: 80px;
+            border: 4px solid #6f2a2a;
+            border: 4px solid rgba(212, 34, 34, 0.4);
+        }
+
+
+/**
+ * Список функций на главной секции
+ */
+.hero-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+    .hero-list__item {
+        margin-bottom: 20px;
+    }
+    .hero-list__img {
+        position: relative;
+        margin-right: 32px;
+        float: left;
+        min-width: 108px;
+    }
+        .hero-list__img:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 25px;
+            left: 48px;
+            width: 64px;
+            height: 74px;
+            border: 3px solid #349b66;
+            border: 3px solid rgba(52, 155, 102, 0.5);
+        }
+    .hero-list__text {
+        display: block;
+        padding-top: 12px;
+        width: auto;
+        overflow: hidden;
+    }
+    .hero-list__title {
+        margin: 0 0 4px;
+        padding: 0;
+        font: 20px Arial, sans-serif;
+    }
+    .hero-list__desc {
+        margin: 0;
+        padding: 0;
+        color: #ccc;
+    }
+
+
+/**
+ * Слайдер в секции "что такое грязезащитный ковер"
+ */
+.about-slider {
+    margin-top: -15px;
+    margin-bottom: 34px;
+}
+    .about-slider .slick-track {
+        padding: 43px 0;
+    }
+    .about-slider .slick-slide {
+        position: relative;
+        z-index: 0;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        -ms-filter: "alpha(opacity=50)";
+    }
+        .about-slider .slick-slide:focus {
+            outline: 0;
+        }
+        .about-slider .slick-slide:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .5);
+        }
+        .about-slider .slick-slide img {
+            margin: auto;
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #fff;
+        }
+        .about-slider .slick-slide.slick-current {
+            z-index: 1;
+            -webkit-transform: scale(1.55);
+                -ms-transform: scale(1.55);
+                    transform: scale(1.55);
+            box-shadow:
+                0 0 3px rgba(0, 0, 0, 0.2),
+                0 0 12px rgba(0, 0, 0, 0.1);
+            /*box-shadow: 0 0 0 1px red;*/
+            transition: transform .3s;
+            -ms-filter: "alpha(opacity=100)";
+            /*-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.55, M12=0, M21=0, M22=1.55, SizingMethod='auto expand')";*/
+        }
+            .about-slider .slick-slide.slick-current:after {
+                content: none;
+            }
+
+
+/**
+ * Часть списка в секции "что такое грязезащитный ковер"
+ */
+.about-add-list {
+    counter-reset: count 3;
+    margin-left: 12px;
+}
+
+
+/**
+ * Блоки со статистикой
+ */
+.stat-block {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 14px 21px;
+    height: 203px;
+    border: 3px solid #3a323a;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+    .stat-block__title {
+        margin: 0;
+        padding: 0;
+        max-width: 55%;
+        text-align: left;
+        font: inherit;
+        color: #4fbd84;
+    }
+
+.stat-chart {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+    .stat-chart__img-wrap {
+        position: relative;
+        height: 76px;
+        text-align: center;
+    }
+    .stat-chart__img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 14px;
+        margin: auto;
+        -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+                transform: translateX(10px);
+        display: inline-block;
+        vertical-align: baseline;
+    }
+        .stat-chart__img_no-gap {
+            -webkit-transform: translateX(0);
+                -ms-transform: translateX(0);
+                    transform: translateX(0);
+        }
+    .stat-chart__desc {
+        margin: 0;
+        padding: 0;
+    }
+
+.stat-info {
+    margin-top: 24px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/**
+ * Галерея с вариантами размещения ковров
+ */
+.place-view-gallery {
+    overflow: hidden;
+    margin-bottom: -38px;
+    padding-top: 10px;
+}
+.place-view {
+    margin: 0 0 38px;
+    text-align: center;
+    color: #433941;
+}
+    .place-view__img-wrap {
+        position: relative;
+        margin: 0 auto 36px;
+        width: 130px;
+        height: 130px;
+        border: 7px solid #e6e6e6;
+        border-radius: 50%;
+    }
+        .place-view__img-wrap:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 30px;
+            bottom: -24px;
+            left: -25px;
+            right: 50%;
+            margin: 0 -2px 0 0;
+            border: 4px solid;
+        }
+        .place-view__img {
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+        .place-view__desc {
+            margin: 0;
+            padding: 0;
+            font: 16px Arial, sans-serif;
+        }
+
+    .place-view_right .place-view__img-wrap:before {
+        left: 50%;
+        right: -25px;
+        margin: 0 0 0 -2px;
+    }
