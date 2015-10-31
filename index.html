@@ -32,7 +32,7 @@
 				<a class="contacts__link" href="tel:+73422042212">(342) <span class="contacts__phone">204 - 22 - 12</span></a>
 				<a class="contacts__link" href="tel:+73422775788">(342) <span class="contacts__phone">277 - 57 - 88</span></a>
 			</div>
-			<a class="panel__cta btn btn_line" href="#">Отправить заявку</a>
+			<a class="panel__cta btn btn_line js-open-modal" href="#">Отправить заявку</a>
 		</div>
 	</header>
 
@@ -86,7 +86,28 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col col_w_5">2</div>
+				<div class="col col_w_4 col_left_1">
+					<form class="contact-form contact-form_col">
+						<div class="contact-form__field">
+							<div class="contact-form__head">
+								<h3 class="contact-form__title">оставьте заявку</h3>
+								<p class="contact-form__info">и наши менеджеры ответят Вам в&nbsp;течении&nbsp;15&nbsp;минут</p>
+							</div>
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите имя">
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите телефон">
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите e-mail">
+						</div>
+						<div class="contact-form__field">
+							<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -162,7 +183,7 @@
 								<div class="stat-chart__img-wrap">
 									<img class="stat-chart__img stat-chart__img_no-gap"src="img/design/chart-2.png" alt="">
 								</div>
-								<figcaption class="stat-chart__desc">В зимний период эта величина увеличивается до 35-60 граммов.</figcaption>
+								<figcaption class="stat-chart__desc">В зимний период эта величина&nbsp;увеличивается до 35-60 граммов.</figcaption>
 							</figure>
 						</div>
 					</div>
@@ -197,7 +218,7 @@
 	</section>
 
 
-	<section class="section">
+	<section class="section place-view-section">
 		<form class="contact-form contact-form_line contact-form_outside container">
 			<div class="row cf">
 				<div class="contact-form__field col col_w_3">
@@ -271,9 +292,11 @@
 	<section class="section square-pattern section_border-top">
 		<div class="container">
 			<h2 class="section__title">Преимущества аренды грязезащитных ковров?</h2>
-			<div class="row cf">
-				<div class="col col_w_4"></div>
-				<div class="col col_w_8">
+			<div class="features cf">
+				<div class="features__img">
+					<img src="img/design/man.png">
+				</div>
+				<div class="features__list">
 					<p class="section__info">Многие уже поняли, что собирать грязь на входе гораздо выгоднее, чем отмывать её потом по всему помещению.</p>
 					<ul class="unordered-list">
 						<li class="unordered-list__item">Сокращение времени уборки на 50 % - сокращает общие расходы.</li>
@@ -292,30 +315,179 @@
 	</section>
 
 
-	<section class="section">
+	<section class="section section_dark">
 		<div class="container">
 			<h2 class="section__title">Сервис грязезащитных ковров включает:</h2>
+			<div class="process">
+				<div class="process__cnt">
+					<img src="img/design/process.png" alt="Сервис грязезащитных ковров" class="process__img">
+					<ol class="process__list">
+						<li class="process__list-item process__list-item_1">&nbsp;Замену&nbsp;грязных&nbsp;ковров</li>
+						<li class="process__list-item process__list-item_2">&nbsp;Стирку&nbsp;и&nbsp;профессиональное обсулживание&nbsp;ковров.</li>
+						<li class="process__list-item process__list-item_3">&nbsp;Хранение&nbsp;на&nbsp;складе чистых&nbsp;ковров.</li>
+						<li class="process__list-item process__list-item_4">&nbsp;Регулярную&nbsp;доставку чистых&nbsp;ковров.</li>
+					</ol>
+					<a class="video-link" href="#">
+						<span class="video-link__text">Посмотреть видеопрезентацию</span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
-	<section class="section skew-pattern">
+	<section class="section clients-section  skew-pattern">
 		<div class="container">
-			<h2 class="section__title">С нами уже работают</h2>
+			<div class="row cf">
+				<div class="col col_w_8">
+					<h2 class="section__title">С нами уже работают</h2>
+					<div class="clients">
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/ikea.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/five.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/vivat.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/cross.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/ikea.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/five.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/vivat.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/cross.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/ikea.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/five.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/vivat.png" alt="">
+						</a>
+						<a class="clients__item" href="#">
+							<img class="clients__logo" src="img/content/cross.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col col_w_4">
+					<form class="contact-form contact-form_col">
+						<div class="contact-form__field">
+							<div class="contact-form__head">
+								<h3 class="contact-form__title">оставьте заявку</h3>
+								<p class="contact-form__info">и наши менеджеры ответят Вам в&nbsp;течении&nbsp;15&nbsp;минут</p>
+							</div>
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите имя">
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите телефон">
+						</div>
+						<div class="contact-form__field">
+							<input class="input" type="text" placeholder="Введите e-mail">
+						</div>
+						<div class="contact-form__field">
+							<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
-	<section class="section">
+	<section class="section testimonial-section">
 		<div class="container">
 			<h2 class="section__title">Отзывы наших клиентов</h2>
+			<div class="testimonials js-slick"  data-slick='{
+				"slidesToShow": 2,
+				"infinite": false,
+				"adpativeHeight": true
+			}'>
+				<div class="testimonial cf">
+					<div class="testimonial__img">
+						<img class="testimonial__photo" src="img/content/client.png" alt="">
+					</div>
+					<div class="testimonial__body">
+						<h3 class="testimonial__author">Дмитрий Иванов</h3>
+						<h4 class="testimonial__post">Директор сети гипермаркетов «Пятерочка»</h4>
+						<p class="testimonial__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.</p>
+					</div>
+				</div>
+				<div class="testimonial cf">
+					<div class="testimonial__img">
+						<img class="testimonial__photo" src="img/content/client.png" alt="">
+					</div>
+					<div class="testimonial__body">
+						<h3 class="testimonial__author">Дмитрий Иванов</h3>
+						<h4 class="testimonial__post">Директор сети гипермаркетов «Пятерочка»</h4>
+						<p class="testimonial__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.</p>
+					</div>
+				</div>
+				<div class="testimonial cf">
+					<div class="testimonial__img">
+						<img class="testimonial__photo" src="img/content/client.png" alt="">
+					</div>
+					<div class="testimonial__body">
+						<h3 class="testimonial__author">Дмитрий Иванов</h3>
+						<h4 class="testimonial__post">Директор сети гипермаркетов «Пятерочка»</h4>
+						<p class="testimonial__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.</p>
+					</div>
+				</div>
+				<div class="testimonial cf">
+					<div class="testimonial__img">
+						<img class="testimonial__photo" src="img/content/client.png" alt="">
+					</div>
+					<div class="testimonial__body">
+						<h3 class="testimonial__author">Дмитрий Иванов</h3>
+						<h4 class="testimonial__post">Директор сети гипермаркетов «Пятерочка»</h4>
+						<p class="testimonial__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
-	<section class="section">
+	<section class="section contacts-section">
+		<div class="ymaps">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3ROFjz8oIPapUYlSd0IJdQbjL3igKTGn&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
+		</div>
 		<div class="container">
-			<h2 class="section__title">Наши контакты</h2>
+			<div class="row cf">
+				<div class="col col_w_8">
+					<h2 class="section__title">Наши контакты</h2>
+				</div>
+				<div class="col col_w_4">
+					<form class="contact-form contact-form_col">
+						<h2 class="contact-form__head">ООО «ЧИСТО» - сервис и аренда грязезащитных ковров.</h2>
+						<dl class="contact-list">
+							<dt class="contact-list__key">Отдел замены ковров:</dt>
+							<dd class="contact-list__value"><a class="contact-list__link" href="tel:+73422775788">(342) 277 - 57 - 88</a></dd>
+
+							<dt class="contact-list__key">Коммерческий отдел: </dt>
+							<dd class="contact-list__value"><a class="contact-list__link" href="tel:+73422042212">(342) 204 - 22 - 12</a></dd>
+
+							<dt  class="contact-list__key contact-list__hide">Адрес</dt>
+							<dd class="contact-list__value">г. Пермь, ш. Космонавтов, 320А</dd>
+
+							<dt class="contact-list__key">Электронный адрес: </dt>
+							<dd class="contact-list__value"><a class="contact-list__link" href="#">info@as.ru</a></dd>
+						</dl>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -331,12 +503,42 @@
 				<a class="contacts__link" href="tel:+73422042212">(342) <span class="contacts__phone">204 - 22 - 12</span></a>
 				<a class="contacts__link" href="tel:+73422775788">(342) <span class="contacts__phone">277 - 57 - 88</span></a>
 			</div>
-			<a class="panel__cta btn btn_line" href="#">Отправить заявку</a>
+			<a class="panel__cta btn btn_line js-open-modal" href="#">Отправить заявку</a>
 		</div>
 	</footer>
 
 
+	<section class="modal-area">
+		<div class="modal-area__out">
+			<div class="modal-area__in">
+				<form class="contact-form contact-form_col">
+					<a class="contact-form__close js-close-modal" href="#">закрыть</a>
+					<div class="contact-form__field">
+						<div class="contact-form__head">
+							<h3 class="contact-form__title">оставьте заявку</h3>
+							<p class="contact-form__info">и наши менеджеры ответят Вам в&nbsp;течении&nbsp;15&nbsp;минут</p>
+						</div>
+					</div>
+					<div class="contact-form__field">
+						<input class="input" type="text" placeholder="Введите имя">
+					</div>
+					<div class="contact-form__field">
+						<input class="input" type="text" placeholder="Введите телефон">
+					</div>
+					<div class="contact-form__field">
+						<input class="input" type="text" placeholder="Введите e-mail">
+					</div>
+					<div class="contact-form__field">
+						<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
 	<script defer src="js/jquery-1.11.1.min.js"></script>
+	<script async defer src="js/placeholders.min.js"></script>
 	<script defer src="js/slick.min.js"></script>
 	<script defer src="js/scripts.js"></script>
 </body>
