@@ -43,6 +43,64 @@
             });
         })();
 
+
+        // реализация прилипающих элементов с помощью position: sticky
+        (function () {
+            var stickyElements = document.getElementsByClassName('js-sticky');
+
+            for (var i = stickyElements.length - 1; i >= 0; i--) {
+                Stickyfill.add(stickyElements[i]);
+            }
+        })();
+
+
+        // работа меню
+        (function () {
+
+            var $navLinks = $('.nav__link');
+            var navHeight = $('.nav').outerHeight();
+
+            function setActiveItem(navItem) {
+                navItem
+                    .addClass('nav__link_active')
+                    .siblings()
+                    .removeClass('nav__link_active');
+            };
+
+            $('section:not(.hero)').waypoint(function(direction) {
+                var id = this.element.id;
+                var $link = $navLinks.filter(function () {
+                    return this.hash.slice(1) === id;
+                });
+                setActiveItem($link);
+            }, {
+                offset: navHeight
+            });
+
+            $('.hero').waypoint(function() {
+                $navLinks.removeClass('nav__link_active');
+            }, {
+                offset: navHeight
+            });
+
+            $(document).on('click', '.nav__link, .nav__text', function (e) {
+                var $target = $(e.target).closest('.nav__link'),
+                    hash = $target.get(0).hash;
+
+                // window.location.hash = hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - navHeight
+                },
+                700,
+                function () {
+                    setActiveItem($target);
+                });
+
+                e.preventDefault();
+            });
+        })();
+
     });
 
 })(jQuery);

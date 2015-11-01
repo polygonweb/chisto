@@ -562,6 +562,10 @@ html {
  * Основная навигация для сайта
  */
 .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     color: #fff;
     background: url("../img/design/nav-bg.png") no-repeat 50% 0 #080504;
 }
@@ -1257,7 +1261,10 @@ html {
     overflow-y: auto;
     text-align: center;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiZmBgeAYQYAAA+gDqszXvbAAAAABJRU5ErkJggg==");
-    transition: .5s;
+    -webkit-transition: opacity .5s;
+       -moz-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
 }
     .modal-area__out {
         display: table;

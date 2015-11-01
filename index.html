@@ -37,17 +37,17 @@
 	</header>
 
 
-	<nav class="nav">
+	<nav class="nav js-sticky">
 		<div class="container">
 			<div class="nav__inner">
-				<a class="nav__link" href="#"><span class="nav__text">Грязезащитный ковер</span></a>
-				<a class="nav__link" href="#"><span class="nav__text">Зачем нужен</span>?</a>
-				<a class="nav__link nav__link_active" href="#"><span class="nav__text">Кому нужен</span>?</a>
-				<a class="nav__link" href="#"><span class="nav__text">Преимущества</span></a>
-				<a class="nav__link" href="#"><span class="nav__text">Схема работы</span></a>
-				<a class="nav__link" href="#"><span class="nav__text">Клиенты</span></a>
-				<a class="nav__link" href="#"><span class="nav__text">Отзывы</span></a>
-				<a class="nav__link" href="#"><span class="nav__text">Контакты</span></a>
+				<a class="nav__link" href="#about"><span class="nav__text">Грязезащитный ковер</span></a>
+				<a class="nav__link" href="#why"><span class="nav__text">Зачем нужен</span>?</a>
+				<a class="nav__link" href="#who"><span class="nav__text">Кому нужен</span>?</a>
+				<a class="nav__link" href="#benefits"><span class="nav__text">Преимущества</span></a>
+				<a class="nav__link" href="#process"><span class="nav__text">Схема работы</span></a>
+				<a class="nav__link" href="#clients"><span class="nav__text">Клиенты</span></a>
+				<a class="nav__link" href="#testimonials"><span class="nav__text">Отзывы</span></a>
+				<a class="nav__link" href="#contacts"><span class="nav__text">Контакты</span></a>
 			</div>
 		</div>
 	</nav>
@@ -115,7 +115,7 @@
 	</section>
 
 
-	<section class="section square-pattern">
+	<section class="section square-pattern" id="about">
 		<div class="container">
 			<h2 class="section__title">Не все знают что такое грязезащитный ковер</h2>
 
@@ -168,7 +168,7 @@
 	</section>
 
 
-	<section class="section section_dark section_add-pad">
+	<section class="section section_dark section_add-pad" id="why">
 		<div class="container">
 			<h2 class="section__title">Зачем Вам нужен грязезащитный ковер?</h2>
 
@@ -222,7 +222,7 @@
 	</section>
 
 
-	<section class="section place-view-section">
+	<section class="section place-view-section" id="who">
 		<form class="contact-form contact-form_line contact-form_outside container">
 			<div class="row cf">
 				<div class="contact-form__field col col_w_3">
@@ -293,7 +293,7 @@
 	</section>
 
 
-	<section class="section square-pattern section_border-top">
+	<section class="section square-pattern section_border-top" id="benefits">
 		<div class="container">
 			<h2 class="section__title">Преимущества аренды грязезащитных ковров?</h2>
 			<div class="features cf">
@@ -319,7 +319,7 @@
 	</section>
 
 
-	<section class="section section_dark">
+	<section class="section section_dark" id="process">
 		<div class="container">
 			<h2 class="section__title">Сервис грязезащитных ковров включает:</h2>
 			<div class="process">
@@ -340,7 +340,7 @@
 	</section>
 
 
-	<section class="section clients-section  skew-pattern">
+	<section class="section clients-section  skew-pattern" id="clients">
 		<div class="container">
 			<div class="row cf">
 				<div class="col col_w_8">
@@ -411,7 +411,7 @@
 	</section>
 
 
-	<section class="section testimonial-section">
+	<section class="section testimonial-section" id="testimonials">
 		<div class="container">
 			<h2 class="section__title">Отзывы наших клиентов</h2>
 			<div class="testimonials js-slick"  data-slick='{
@@ -464,7 +464,7 @@
 	</section>
 
 
-	<section class="section contacts-section">
+	<section class="section contacts-section" id="contacts">
 		<div class="ymaps">
 			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3ROFjz8oIPapUYlSd0IJdQbjL3igKTGn&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
 		</div>
@@ -544,6 +544,8 @@
 	<script defer src="js/jquery-1.11.1.min.js"></script>
 	<script async defer src="js/placeholders.min.js"></script>
 	<script defer src="js/slick.min.js"></script>
+	<script defer src="js/stickyfill.min.js"></script>
+	<script defer src="js/jquery.waypoints.min.js"></script>
 	<script defer src="js/scripts.js"></script>
 </body>
 </html>
