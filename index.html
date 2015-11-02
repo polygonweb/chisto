@@ -54,9 +54,6 @@
 
 
 	<section class="section section_dark hero">
-		<div class="container decorate" aria-hidden="true">
-			<div class="decorate__ribbon"></div>
-		</div>
 		<div class="container">
 			<h2 class="hero__title">Аренда и обслуживание грязезащитных ковров в перми</h2>
 			<div class="row cf">
@@ -92,7 +89,7 @@
 					</ul>
 				</div>
 				<div class="col col_w_4 col_left_1">
-					<form class="contact-form contact-form_col">
+					<form class="contact-form contact-form_col" action="send/" method="post">
 						<div class="contact-form__field">
 							<div class="contact-form__head">
 								<h3 class="contact-form__title">оставьте заявку</h3>
@@ -100,13 +97,13 @@
 							</div>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите имя" required>
+							<input class="input" type="text" name="name" placeholder="Введите имя" required>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите телефон" required>
+							<input class="input" type="text" name="phone" placeholder="Введите телефон" required>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите e-mail" required>
+							<input class="input" type="text" name="mail" placeholder="Введите e-mail" required>
 						</div>
 						<div class="contact-form__field">
 							<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
@@ -226,7 +223,7 @@
 
 
 	<section class="section place-view-section" id="who">
-		<form class="contact-form contact-form_line contact-form_outside container">
+		<form class="contact-form contact-form_line contact-form_outside container" action="send/" method="post">
 			<div class="row cf">
 				<div class="contact-form__field col col_w_3">
 					<div class="contact-form__head">
@@ -235,10 +232,10 @@
 					</div>
 				</div>
 				<div class="contact-form__field col col_w_3">
-					<input class="input" type="text" placeholder="Введите имя" required>
+					<input class="input" type="text" name="name" placeholder="Введите имя" required>
 				</div>
 				<div class="contact-form__field col col_w_3">
-					<input class="input" type="text" placeholder="Введите телефон" required>
+					<input class="input" type="text" name="phone" placeholder="Введите телефон" required>
 				</div>
 				<div class="contact-form__field col col_w_3">
 					<button class="btn btn_fill" type="submit">Отправить заявку</button>
@@ -388,7 +385,7 @@
 					</div>
 				</div>
 				<div class="col col_w_4">
-					<form class="contact-form contact-form_col">
+					<form class="contact-form contact-form_col" action="send/" method="post">
 						<div class="contact-form__field">
 							<div class="contact-form__head">
 								<h3 class="contact-form__title">оставьте заявку</h3>
@@ -396,13 +393,13 @@
 							</div>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите имя" required>
+							<input class="input" type="text" name="name" placeholder="Введите имя" required>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите телефон" required>
+							<input class="input" type="text" name="phone"  placeholder="Введите телефон" required>
 						</div>
 						<div class="contact-form__field">
-							<input class="input" type="text" placeholder="Введите e-mail" required>
+							<input class="input" type="text" name="mail" placeholder="Введите e-mail" required>
 						</div>
 						<div class="contact-form__field">
 							<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
@@ -477,7 +474,7 @@
 					<h2 class="section__title">Наши контакты</h2>
 				</div>
 				<div class="col col_w_4">
-					<form class="contact-form contact-form_col">
+					<div class="contact-form contact-form_col">
 						<h2 class="contact-form__head">ООО «ЧИСТО» - сервис и аренда грязезащитных ковров.</h2>
 						<dl class="contact-list">
 							<dt class="contact-list__key">Отдел замены ковров:</dt>
@@ -492,7 +489,7 @@
 							<dt class="contact-list__key">Электронный адрес: </dt>
 							<dd class="contact-list__value"><a class="contact-list__link" href="#">info@as.ru</a></dd>
 						</dl>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -518,7 +515,7 @@
 	<section class="modal-area">
 		<div class="modal-area__out">
 			<div class="modal-area__in">
-				<form class="contact-form contact-form_col">
+				<form class="contact-form contact-form_col" action="send/" method="post">
 					<a class="contact-form__close js-close-modal" href="#">закрыть</a>
 					<div class="contact-form__field">
 						<div class="contact-form__head">
@@ -527,13 +524,13 @@
 						</div>
 					</div>
 					<div class="contact-form__field">
-						<input class="input" type="text" placeholder="Введите имя" required>
+						<input class="input" type="text" name="name" placeholder="Введите имя" required>
 					</div>
 					<div class="contact-form__field">
-						<input class="input" type="text" placeholder="Введите телефон" required>
+						<input class="input" type="text" name="phone" placeholder="Введите телефон" required>
 					</div>
 					<div class="contact-form__field">
-						<input class="input" type="text" placeholder="Введите e-mail" required>
+						<input class="input" type="text" name="mail" placeholder="Введите e-mail" required>
 					</div>
 					<div class="contact-form__field">
 						<button class="contact-form__submit btn btn_fill" type="submit">Отправить заявку</button>
