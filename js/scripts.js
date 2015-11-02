@@ -89,7 +89,7 @@
 
                 // window.location.hash = hash;
 
-                $('html, body').animate({
+                $('html, body').stop().animate({
                     scrollTop: $(hash).offset().top - navHeight
                 },
                 700,
