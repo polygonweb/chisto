@@ -563,7 +563,7 @@ html {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     color: #fff;
     background: url("../img/design/nav-bg.png") no-repeat 50% 0 #080504;
 }
