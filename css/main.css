@@ -287,6 +287,7 @@ html {
     .contact-form__head {
         display: inline-block;
         vertical-align: middle;
+        max-width: 100%;
         text-align: center;
         line-height: normal;
         font-family: Arial, sans-serif;
@@ -428,6 +429,7 @@ html {
         left: 0;
         width: 1px;
         height: 1px;
+        font: 0/0 a;
         color: transparent;
         opacity: 0;
     }
@@ -441,7 +443,7 @@ html {
 }
 .container {
     position: relative;
-    z-index: 0;
+    z-index: 2;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
@@ -675,9 +677,12 @@ html {
     padding-top: 24px;
     padding-bottom: 18px;
     background: url("../img/design/hero-bg.jpg") no-repeat 50% 100% #060606;
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%;
 }
     .hero__title {
         position: relative;
+        z-index: auto;
         margin: 0 auto 40px;
         -webkit-box-sizing: border-box;
            -moz-box-sizing: border-box;
@@ -1180,6 +1185,7 @@ html {
  */
 .contacts-section {
     position: relative;
+    z-index: 2;
     border: 2px solid #b3b3b3;
     border-width: 2px 0;
     background: #f1f1f1 url("../img/design/map.jpg") no-repeat 50% 50%;
@@ -1298,3 +1304,32 @@ html {
         opacity: 1;
         visibility: visible;
     }
+
+
+/* ленты */
+.groups {}
+.section-group {
+    position: relative;
+}
+    .section-group:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 940px;
+        width: 100%;
+        opacity: .15;
+        background: none no-repeat;
+        -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+    }
+        .section-group:nth-child(odd):before {
+            background-image: url("../img/design/ribbon.png");
+        }
+        .section-group:nth-child(even):before {
+            background-image: url("../img/design/ribbon-reverse.png");
+        }
